@@ -9,3 +9,4 @@ if (trimmed.length < 1 || trimmed.length > 160) {
 
 mkdirSync('/output', { recursive: true });
 writeFileSync('/output/entry.txt', trimmed);
+console.log(`wrote /output/entry.txt (${trimmed.length} chars)`);
